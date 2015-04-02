@@ -8,10 +8,10 @@
 
     <title>Caffe Demos</title>
 
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     <!-- Script to instantly classify an image once it is uploaded. -->
     <script type="text/javascript">
@@ -48,13 +48,6 @@
   <body>
     <!-- Begin page content -->
     <div class="container">
-      <div class="page-header">
-        <h1><a href="/">Caffe Demos</a></h1>
-        <p>
-          The <a href="http://caffe.berkeleyvision.org">Caffe</a> neural network library makes implementing state-of-the-art computer vision systems easy.
-        </p>
-      </div>
-
       <div>
         <h2>Classification</h2>
         <a href="/classify_url?imageurl=http%3A%2F%2Fi.telegraph.co.uk%2Fmultimedia%2Farchive%2F02351%2Fcross-eyed-cat_2351472k.jpg">Click for a Quick Example</a>
@@ -69,10 +62,6 @@
         <a class="pull-left" href="#"><img class="media-object" width="192" height="192" src={{ imagesrc }}></a>
         <div class="media-body">
           <div class="bs-example bs-example-tabs">
-            <ul id="myTab" class="nav nav-tabs">
-              <li class="active"><a href="#infopred" data-toggle="tab">Maximally accurate</a></li>
-              <li><a href="#flatpred" data-toggle="tab">Maximally specific</a></li>
-            </ul>
             <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade in active" id="infopred">
                 <ul class="list-group">
@@ -110,7 +99,7 @@
       <form id="formupload" class="form-inline" role="form" action="classify_upload" method="post" enctype="multipart/form-data">
         <div class="form-group">
           <label for="imagefile">Or upload an image:</label>
-          <input type="file" name="imagefile" id="imagefile">
+          <input type="file" name="imagefile" id="imagefile" accept="">
         </div>
         <!--<input type="submit" class="btn btn-primary" value="Classify File" id="classifyfile"></input>-->
       </form>
